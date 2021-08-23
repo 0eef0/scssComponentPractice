@@ -1,0 +1,35 @@
+div#navbar {
+  background-color: green;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 5rem;
+}
+
+div#content {
+  background-color: hsl(233, 30%, 50%);
+  width: 80%;
+  min-height: 100vh;
+  padding: 3rem;
+  margin-left: 0;
+}
+
+div#sideContent {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  padding-top: calc(1rem + 10vh);
+  height: 100vh;
+  background-color: grey;
+  z-index: -1;
+}
+
+div#footer {
+  background-color: hsl(145, 60%, 50%);
+  width: 100%;
+  min-height: 10rem;
+  margin-left: 0;
+  z-index: 1;
+}

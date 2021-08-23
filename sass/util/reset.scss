@@ -1,0 +1,37 @@
+/* Comments are for the things that I didn't understand before I looked them up */
+
+* {
+  box-sizing: border-box; /* Makes it so that margin and padding are included in width and height */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; /* Makes things line up better with their parent element */
+  -webkit-font-smoothing: antialiased; /* Makes font on pages smoother overall */
+  text-size-adjust: none; /* Makes it so that when the page is zoomed in on, the font size will now change */
+}
+
+body {
+  line-height: 1; /* Used to set the height between lines of text */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Did not know these tags even existed but they're to borrow things from another source */
+blockquote,
+q {
+  quotes: none; /* these tags will not use any quotation marks at all */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}

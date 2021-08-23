@@ -1,0 +1,139 @@
+/* Comments are for the things that I didn't understand before I looked them up */
+* {
+  box-sizing: border-box;
+  /* Makes it so that margin and padding are included in width and height */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /* Makes things line up better with their parent element */
+  -webkit-font-smoothing: antialiased;
+  /* Makes font on pages smoother overall */
+  text-size-adjust: none;
+  /* Makes it so that when the page is zoomed in on, the font size will now change */
+}
+
+body {
+  line-height: 1;
+  /* Used to set the height between lines of text */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Did not know these tags even existed but they're to borrow things from another source */
+blockquote,
+q {
+  quotes: none;
+  /* these tags will not use any quotation marks at all */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+/* Blues */
+/* Greens */
+/* Yellows */
+/* Misc */
+div#sidebar {
+  background-color: #40bf75;
+  color: #ffe100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 100vh;
+  overflow: hidden;
+  transition: width 0.25s;
+}
+div#sidebar img {
+  width: 5rem;
+  display: block;
+  margin: 1rem auto 3rem auto;
+}
+div#sidebar li.closedItem {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+div#sidebar li.expandedItem {
+  display: none;
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+div#sidebar li.expandedItem p {
+  transition: padding-left 0.25s;
+  width: 100%;
+}
+div#sidebar li.expandedItem p span {
+  position: absolute;
+  left: 13rem;
+}
+div#sidebar li.expandedItem ol.dropdown {
+  margin-left: 1rem;
+}
+div#sidebar li.expandedItem ol.dropdown li.dropdownItem {
+  display: block;
+  font-size: 1.5rem;
+  border: none;
+  transition: padding-left 0.25s;
+}
+div#sidebar li.expandedItem ol.dropdown li.dropdownItem:hover {
+  padding-left: 1rem;
+  border-left: 0.3rem #ffe100 solid;
+}
+div#sidebar li.expandedItem:hover p {
+  border-left: 0.3rem #ffe100 solid;
+  padding-left: 1rem;
+}
+div#sidebar:hover {
+  width: 15rem;
+}
+div#sidebar:hover ul {
+  margin-left: 1rem;
+}
+div#sidebar:hover li.expandedItem {
+  display: block;
+}
+div#sidebar:hover li.closedItem {
+  display: none;
+}
+
+div#content {
+  background-color: #5962a6;
+  width: calc(80% - 5rem);
+  min-height: 100vh;
+  padding: 3rem;
+  margin-left: 5rem;
+}
+
+div#sideContent {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  height: 100vh;
+  background-color: grey;
+}
+
+div#footer {
+  background-color: #33cc73;
+  width: calc(80% - 5rem);
+  min-height: 10rem;
+  margin-left: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

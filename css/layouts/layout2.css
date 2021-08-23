@@ -1,0 +1,37 @@
+div#navbar {
+  background-color: green;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 5rem;
+}
+
+div#content {
+  background-color: #5962a6;
+  width: 80%;
+  min-height: 100vh;
+  padding: 3rem;
+  margin-left: 0;
+}
+
+div#sideContent {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  padding-top: calc(1rem + 10vh);
+  height: 100vh;
+  background-color: grey;
+  z-index: -1;
+}
+
+div#footer {
+  background-color: #33cc73;
+  width: 100%;
+  min-height: 10rem;
+  margin-left: 0;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=layout2.css.map */
